@@ -9,9 +9,9 @@ class SimilarityController extends Controller
 {
     public function index(){
         
-        $numberOfAinBacon1 = $this->getNumberOfLL($this->prepareBaconApi());
-        $numberOfAinBacon2 = $this->getNumberOfLL($this->prepareBaconApi());
-        return view('similarity.index', ['numberOfAinBacon1' => $numberOfAinBacon1, 'numberOfAinBacon2' => $numberOfAinBacon2]);
+        $numberOfLInBacon1 = $this->getNumberOfLL($this->prepareBaconApi());
+        $numberOfLInBacon2 = $this->getNumberOfLL($this->prepareBaconApi());
+        return view('similarity.index', ['numberOfLInBacon1' => $numberOfLInBacon1, 'numberOfLInBacon2' => $numberOfLInBacon2]);
     }
 
     public function prepareBaconApi(){
