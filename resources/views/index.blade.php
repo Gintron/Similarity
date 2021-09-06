@@ -21,6 +21,6 @@
         </style>
     </head>
     <body>
-        <h1>'ll' bacon:loripsum= {{ $numberOfAinBacon1 }}:{{ $numberOfAinBacon2 }}</h1>
+        <h1>'ll' bacon1:bacon2= {{ $numberOfAinBacon1 }}:{{ $numberOfAinBacon2 }}</h1>
     </body>
 </html>
