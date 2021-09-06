@@ -25,5 +25,14 @@ class SimilarityTest extends TestCase
         $data = $controller->getDataFromBaconApi();
         $this->
             assertJson($data);
+ 
+    }
+    public function test_json_to_string(){
+        $controller = new SimilarityController();
+        $data = $controller->getDataFromBaconApi();
+        $data = $controller->convertJsonToString($data);
+
+        $this->
+            assertIsString($data);
     }
 }
