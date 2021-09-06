@@ -19,4 +19,11 @@ class SimilarityTest extends TestCase
 
         $this->assertEquals(1, $data);
     }
+
+    public function test_if_bacon_api_works(){
+        $controller = new SimilarityController();
+        $data = $controller->getDataFromBaconApi();
+        $this->
+            assertJson($data);
+    }
 }
