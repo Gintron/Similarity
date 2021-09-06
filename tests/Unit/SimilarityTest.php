@@ -12,6 +12,8 @@ class SimilarityTest extends TestCase
      *
      * @return void
      */
+    
+
     public function test_count_of_ll()
     {
         $controller = new SimilarityController();
@@ -24,13 +26,12 @@ class SimilarityTest extends TestCase
         $controller = new SimilarityController();
         $data = $controller->getDataFromBaconApi();
         $this->
-            assertJson($data);
- 
+            assertIsArray($data);
     }
-    public function test_json_to_string(){
+    public function test_array_to_string(){
         $controller = new SimilarityController();
         $data = $controller->getDataFromBaconApi();
-        $data = $controller->convertJsonToString($data);
+        $data = $controller->convertArrayToString($data);
 
         $this->
             assertIsString($data);
